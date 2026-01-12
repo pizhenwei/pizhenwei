@@ -1,16 +1,15 @@
-Hi, I’m @pizhenwei
+Hi, I'm @pizhenwei
 
-I’m interested in the Linux operating system and lots of software. I've contributed to Linux, util-linux, QEMU, libvirt, libiscsi, spdk, tgt, Valkey, Redis, bcc, atop, rdma-core.
-- I developed [Valkey over RDMA](https://github.com/valkey-io/valkey/blob/unstable/src/rdma.c), and the new feature has been merged into Valkey 8.0. This allows clients to communicate with the Valkey server via RDMA, potentially improving the QPS by approximately 250% and reducing latency by around 50%. I also developed Valkey Over MPTCP, Valkey LTTNG based tracing events and so on.
-- I developed the virtio crypto kernel driver, the QEMU backend and virtio crypto specification of akcipher support. These developments allow guests to offload RSA/ECDSA to the hosts. It's possible to let nginx (with openssl) improve the performance of HTTPS to ~200%. I have been maintaining the cryptodev subsystem of QEMU since March 2023.
-- I contributed lots of patches to [atop](https://github.com/atoptool/atop). I also developed [atophttpd](https://github.com/pizhenwei/atophttpd), which is a web-style atop. This allows users to access atop without logging in. It's also possible to get the system-level/process-level status of many servers in batch.
-- I wrote the `irqtop/lsirq/blkpr` commands and improved `lsblk` (from [util-linux](https://github.com/util-linux/util-linux)). Any suggestion/feedback is welcome!
-- I wrote the `hugetop` command (from [procps](https://gitlab.com/procps-ng/procps)). Any suggestion/feedback is welcome!
-- I wrote the `tcprtt/virtiostat/rdmaucma` commands and improved the `runqslower/killsnoop/trace/funccount` commands (from [bcc](https://github.com/iovisor/bcc)). Any suggestion/feedback is welcome!
-- I'm familiar with iSCSI/iSER/NVMe-oF, contributed patches to libiscsi/spdk/tgt/kernel nvme target, and I also developed a user-space NVMe-oF initiator [libnvmf](https://github.com/bytedance/libnvmf) which makes QEMU block as fast as ~200K IOPS.
-- I have worked on the Virtio Over Fabrics specification, Linux driver demonstration code, and the Virtio-oF target. This work has stalled.
-- 📫 Email: zhenwei.pi@linux.dev
-<!---
-pizhenwei/pizhenwei is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+I'm interested in the Linux operating system and various software projects. I've contributed to Linux, QEMU, libvirt, libiscsi, SPDK, tgt, Valkey, Redis, BCC, atop, rdma-core, util-linux, and procps-ng.
+
+- I developed [Valkey over RDMA](https://github.com/valkey-io/valkey/blob/unstable/src/rdma.c), a feature merged into Valkey 8.0 that allows clients to communicate with the Valkey server via RDMA, improving QPS by approximately 250% and reducing latency by about 50%. I also developed Valkey over MPTCP, Valkey LTTNG-based tracing events, and more. I'm a top contributor to Redis/Valkey/libvalkey.
+- I contributed the virtio crypto kernel driver, the QEMU backend, and the virtio crypto specification for akcipher support, enabling guests to offload RSA/ECDSA operations to the host. This allows nginx (with OpenSSL) to improve HTTPS performance by up to ~200%. I have been maintaining the cryptodev subsystem of QEMU since March 2023.
+- I have also contributed patches to the mm, NVMe, InfiniBand, virtio, and pvpanic subsystems of the Linux kernel. In total, I've contributed over 100 patches to Linux and QEMU.
+- I contributed multiple patches to [atop](https://github.com/atoptool/atop)​ and developed [atophttpd](https://github.com/pizhenwei/atophttpd), a web‑based version of atop that provides remote access without requiring login. It also supports batch retrieval of system‑level and process‑level status across multiple servers.
+- I authored the `irqtop`, `sirq`, and `blkpr` commands and enhanced `lsblk` in [util-linux](https://github.com/util-linux/util-linux). Suggestions and feedback are welcome!
+- I wrote the hugetop command in [procps](https://gitlab.com/procps-ng/procps). Suggestions and feedback are welcome!
+- I created the `tcprtt`, `virtiosta`t, and `rdmaucma` commands, and improved `runqslower`, `killsnoop`, `trace`, and `funccount` in [BCC](https://github.com/iovisor/bcc). Suggestions and feedback are welcome!
+- I'm familiar with iSCSI, iSER, and NVMe‑oF. I contributed about 100 patches to libiscsi, SPDK, tgt and the kernel NVMe‑oF target, and also developed the userspace NVMe‑oF initiator [libnvmf](https://github.com/bytedance/libnvmf), which enables QEMU block performance of up to ~200K IOPS.
+- I worked on the Virtio Over Fabrics specification, Linux driver demonstration code, and the Virtio‑oF target, though this project is currently on hold.
+
+📫 Email: zhenwei.pi@linux.dev
